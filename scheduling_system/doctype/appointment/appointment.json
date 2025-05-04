@@ -1,0 +1,53 @@
+{
+  "name": "Appointment",
+  "doctype": "DocType",
+  "is_tree": 0,
+  "autoname": "format:AP-{MM}-{YYYY}-{#####}",
+  "fields": [
+    {
+      "fieldname": "client_name",
+      "label": "Client Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "start_date",
+      "label": "Start date",
+      "fieldtype": "Datetime",
+      "reqd": 1
+    },
+    {
+      "fieldname": "duration",
+      "label": "Duration",
+      "fieldtype": "Time",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "label": "End date",
+      "fieldtype": "Datetime",
+      "read_only": 1
+    },
+    {
+      "fieldname": "description",
+      "label": "Description",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "seller",
+      "label": "Seller",
+      "fieldtype": "Link",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Scheduled\nFinished\nCanceled",
+      "default": "Scheduled"
+    }
+  ],
+  "show_calendar_view": 1,
+  "default_view": "Calendar"
+}
