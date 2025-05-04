@@ -1,6 +1,6 @@
 ## Scheduling System
 
-sistema de agendamento
+resposta para o study case da Nexforce
 
 #### License
 
